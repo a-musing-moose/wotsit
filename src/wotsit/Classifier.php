@@ -3,7 +3,6 @@
  * @package wotsit
  * @author Jonathan Moss <jonathan.moss@tangentone.com.au>
  * @copyright 2010 Tangent/One Au
- * @version SVN: $Id$
  */
 
 /**
@@ -178,8 +177,5 @@ abstract class wotsit_Classifier implements wotsit_iClassifier
         $weight = $feature->getWeight();
         $weightedProbability = (($weight*$assumedProbability) + ($totals*$baseProbability)) / ($weight+$totals);
         return $weightedProbability;
-    }
-
-    
+    }   
 }
-?>

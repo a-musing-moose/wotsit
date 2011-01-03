@@ -4,13 +4,12 @@
  * @subpackage storage
  * @author Jonathan Moss <jonathan.moss@tangentone.com.au>
  * @copyright 2010 Tangent/One Au
- * @version SVN: $Id$
  */
 
 /**
  * SQLite based storage of data
  *
- * For some reason this is sonewhat slow
+ * For some reason this is somewhat slow
  *
  * @package wotsit
  * @subpackage storage

@@ -2,7 +2,6 @@
 /**
  * @author Jonathan Moss <jonathan.moss@tangentone.com.au>
  * @copyright 2010 Tangent/One Au
- * @version SVN: $Id$
  */
 
 Phar::mapPhar();

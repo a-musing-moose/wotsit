@@ -4,7 +4,6 @@
  * @subpackage classifier
  * @author Jonathan Moss <jonathan.moss@tangentone.com.au>
  * @copyright 2010 Tangent/One Au
- * @version SVN: $Id$
  */
 
 /**
@@ -76,4 +75,3 @@ class wotsit_classifier_Fisher extends wotsit_Classifier implements wotsit_iClas
 		return min($sum, 1.0);
 	}
 }
-?>
