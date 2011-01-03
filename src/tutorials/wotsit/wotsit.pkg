@@ -1,0 +1,70 @@
+<refentry id="{@id}">
+	<refnamediv>
+		<refname>
+			Wotsit
+        </refname>
+		<refpurpose>
+			An introductory tutorial to Wotsit Classfier
+        </refpurpose>
+	</refnamediv>
+
+	<refsynopsisdiv>
+		<author>
+			<authorblurb>
+				{@link mailto:jonathan.moss@tangentone.com.au Jonathan
+				Moss}
+            </authorblurb>
+		</author>
+		<para>
+			The Wotsit package provides a document classification framework
+        </para>
+	</refsynopsisdiv>
+	{@toc}
+	<refsect1 id="{@id intro}">
+		<title>Overview</title>
+		<para>
+			This package comprises a suite of classes for automatic classification
+			of documents based on statistical analysis of the document against previously
+			seen documents.
+        </para>
+        <para>
+            It should be noted that the classifiers in the package are heuristics based and are therefore
+            not 100% accurate. They also rely on some level of training before they become useful.
+        </para>
+	</refsect1>
+
+	<refsect1 id="{@id basic_usage}">
+		<title>Basic Usage</title>
+		<para>
+		  In the following section we go over the basics of Wotsit. How we create a classifier,
+		  how we train it and how to use it there after.
+		</para>
+		<refsect2 id="{@id using_a_classfier}">
+		   <title>Creating and using a pre-trained classfier</title>
+			<para>
+                Using a pre-trained classifier is very easy. e.g.
+                {@example preTrained.php}
+            </para>
+		</refsect2>
+		<refsect2 id="{@id training_a_classfier}">
+           <title>Training a classfier</title>
+            <para>
+                Training a classifier is also quite straight forward. All you need is to
+                initialise the classfier and then feed it sample data. e.g.
+                {@example training.php}
+            </para>
+            <para>
+                Of course there is nothing stopping you taking a pre-trained dataset and
+                refining it with you own data.
+            </para>
+            <para>
+                You can also constantly refine the learned data by allowing users or administrators
+                to feedback their own decisions. For example, you could automatically mark comments
+                as 'good' or 'bad' based on the output of the classifier, but allow users to mark the
+                comment differently and then use their feedback to 're-train' the classfier.
+            </para>
+        </refsect2>
+	</refsect1>
+
+
+</refentry>
