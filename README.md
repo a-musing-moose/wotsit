@@ -51,5 +51,5 @@ Training:
         $classfier->train($badDatum, 'bad');
     }
 
-For more informtaion see documentation which can be build by running:
+For more informtaion see the API documentation which can be build by running:
     phing api-docs
