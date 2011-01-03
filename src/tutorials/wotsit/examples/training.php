@@ -1,6 +1,6 @@
 <?php
 //initialise storage object with previously learned data
-$storage = new wotsit_storage_Sqlite('new.db');
+$storage = new wotsit_storage_Dbm('new.db');
 
 $extractor = new wotsit_feature_WordExtractor(); //NB: You can also pass in a stemmer if you desire
 $classfier = new wotsit_classifier_NaiveBayesian($extractor, $storage);
