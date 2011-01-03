@@ -1,4 +1,4 @@
-# Wotsit - A Bayesian Filtering Library for PHP
+# Wotsit - A Bayesian Classification Library for PHP
 
 ## Installation
 
