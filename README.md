@@ -53,3 +53,18 @@ Training:
 
 For more informtaion see the API documentation which can be build by running:
     phing api-docs
+
+## Running Tests
+
+You can either run the tests by calling the appropriate targets with phing:
+    phing unit-report
+    phing integration-report
+    phing bdd-report
+
+The above commands will run the specified test suite and build a report within the docs folder
+
+You can also run the unit tests from the phar file itself:
+    php Wotsit.phar test
+
+There are a couple of other things you can run directly from the phar file. Try:
+    php Wotsit.phar help
