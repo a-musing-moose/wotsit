@@ -171,8 +171,16 @@ EOD;
         echo <<<EOD
 Usage: php Wotsit.phar [switches] test
        php Wotsit.phar [switches] help
+       php Wotsit.phar [switches] list
 
+Actions:
+  test              Runs the unit test suite
+  help              Show this usage information
+  list              Lists the metadata and file content of this library
+
+Switches:
   --verbose         Will output a more verbose test report
+  --testdox         Will output a test results in the testdox format
 
 
 EOD;
