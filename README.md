@@ -14,7 +14,7 @@
 ### Building
 Wotsit is designed to be packaged as a phar file. To create the package run:
     phing build-all
-This will build run all tests, create documentation (in the /docs folder) and creates the Wotsit.phar file
+This will run all tests, create documentation (in the /docs folder) and creates the Wotsit.phar file
 
 ## Usage
 
