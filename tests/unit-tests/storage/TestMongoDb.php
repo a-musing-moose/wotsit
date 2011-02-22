@@ -24,6 +24,10 @@ class wotsit_storage_TestMongoDb extends PHPUnit_Framework_TestCase
 
     public function setup()
     {
+        if (!class_exists('Mongo')) {
+            $this->markTestSkipped("MongoDB extension not install");
+        }
+
         $m = new Mongo("mongodb://localhost", array("connect" => false));
         try {
             $m->connect();
