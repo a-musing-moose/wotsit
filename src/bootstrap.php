@@ -5,8 +5,9 @@
  */
 
 Phar::mapPhar();
-
-if (php_sapi_name() == 'cli' && isset ($argv[0])) {
+if (php_sapi_name() == 'cli'
+    && isset ($argv[0])
+    && $argv[0] == basename(__FILE__)) {
     $runner = new CliRunner();
     $runner->processParameters($argv);
 } else {
